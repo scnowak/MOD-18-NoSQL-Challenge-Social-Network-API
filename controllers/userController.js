@@ -21,7 +21,7 @@ const userController = {
       .populate("thoughts")
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "No user has that id" });
+          return res.status(404).json({ message: "No user was found with that id" });
         }
         res.json(dbUserData);
       })
@@ -59,7 +59,7 @@ const userController = {
     )
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "No user with this id!" });
+          return res.status(404).json({ message: "No user was found with that id" });
         }
         res.json(dbUserData);
       })
@@ -75,7 +75,7 @@ const userController = {
     User.findOneAndDelete({ _id: req.params.userId })
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "No user with this id!" });
+          return res.status(404).json({ message: "No user was found with that id!" });
         }
         res.status(200).json(dbUserData);
       })
@@ -95,7 +95,7 @@ const userController = {
     )
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "No user has this id" });
+          return res.status(404).json({ message: "No user was found with that id" });
         }
         res.json(dbUserData);
       })
@@ -115,7 +115,7 @@ const userController = {
     )
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "No user has this id!" });
+          return res.status(404).json({ message: "NNo user was found with that id!" });
         }
         res.json(dbUserData);
       })
