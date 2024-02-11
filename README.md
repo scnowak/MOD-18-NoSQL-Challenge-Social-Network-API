@@ -5,27 +5,22 @@ This API allows users to create and manage a social network with features like c
 
 ## Table of Contents
 ​
-* [User Story](#user_story)
-* [Acceptance Criteria](#acceptance_criteria)
-* [Requirements](#requirements)
-* [Getting Started](#getting_started)
+* [Installation](#installation)
 * [Packages](#packages)
-* [API Endpoints](#api_endpoints)
-* [User Endpoints](#user_endpoints)
-* [Post Endpoints](#post_endpoints)
-* [Comment Endpoints](#comment_endpoints)
-* [Follow Endpoints](#follow_endpoints)
-* [Links](#links)
+* [Screenshots](#screenshots)
+* [Demo](#demo)
+* [Endpoints](#endpoints)
+* [Contact](#contact)
 
 
-## User Story
+### User Story
 ```
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 ```
 GIVEN a social network API
 WHEN I enter the command to invoke the application
@@ -38,11 +33,8 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
-## Requirements
-- Node.js
-- MongoDB
 
-## Getting Started
+## Installation
 
 - Clone the repository to your local machine.
 - Run `npm install` to install the required dependencies.
@@ -53,19 +45,52 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 * Express.js https://www.npmjs.com/package/express
 * Mongoose ODM https://www.npmjs.com/package/mongoose to connect to MongoDB database
+* Javascript
+* Node.js
+* MongoDB
+* Visual Studio Code
 
-## API Endpoints
+
+## Screenshots
+
+![DELETE single user by id](/assets/DELETE_single_user_by_id.png)
+
+![GET all users](/assets/GET_all_users.png)
+
+![GET all thoughts](/assets/GET_all_thoughts.png)
+
+![GET single thought](/assets/GET_single_thought.png)
+
+![GET single user by id](/assets/GET_single_user_by_id.png)
+
+![POST new user](/assets/POST_new_user.png)
+
+![PUT update user by id](/assets/PUT_update_user_by_id.png)
+
+
+## Demo
+
+These two walkthrough videos shows POST, GET, PUT, and DELETE routes required through Insomnia testing. 
+
+
+<video src="MOD18SocNetAPI.mp4" controls title="Insomnia demo"></video>
+
+<video src="MOD18%20DELETE%20reaction%20by%20reaction%20id.mp4" controls title="Delete reaction by reaction id"></video>
+
+
+
+## Endpoints
 
 The API has the following endpoints:
 
-## User Endpoints
+### User Endpoints
 
 - `POST /users`: Creates a new user
 - `GET /users/:id`: Gets a user by ID
 - `PUT /users/:id`: Updates a user by ID
 - `DELETE /users/:id`: Deletes a user by ID
 
-## Post Endpoints
+### Post Endpoints
 
 - `POST /posts`: Creates a new post
 - `GET /posts`: Gets all posts
@@ -73,7 +98,7 @@ The API has the following endpoints:
 - `PUT /posts/:id`: Updates a post by ID
 - `DELETE /posts/:id`: Deletes a post by ID
 
-## Comment Endpoints
+### Comment Endpoints
 
 - `POST /comments`: Creates a new comment
 - `GET /comments`: Gets all comments
@@ -81,12 +106,19 @@ The API has the following endpoints:
 - `PUT /comments/:id`: Updates a comment by ID
 - `DELETE /comments/:id`: Deletes a comment by ID
 
-## Follow Endpoints
+### Follow Endpoints
 
 - `POST /follow`: Follows another user
 - `DELETE /follow/:id`: Unfollows a user
 
-## Links
+## Contact
 
-- Github: 
-- Video Walkthrough: 
+This app was created by Shan Nowak.
+I received fantastic support and help from my tutor Bobbi Tarkany.
+
+Contact:
+
+GITHUB: https://github.com/scnowak
+
+EMAIL:  SHAN.NOWAK93@GMAIL.COM
+

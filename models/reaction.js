@@ -21,7 +21,7 @@ const ReactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: (currentDate) => moment(currentDate).toDate(),
+      get: (currentDate) => dateFormat(currentDate),
     },
   },
   {
