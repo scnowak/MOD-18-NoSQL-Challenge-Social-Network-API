@@ -9,6 +9,7 @@ This API allows users to create and manage a social network with features like c
 * [Packages](#packages)
 * [Screenshots](#screenshots)
 * [Demo](#demo)
+* [Bonus](#Bonus)
 * [Endpoints](#endpoints)
 * [Contact](#contact)
 
@@ -77,6 +78,9 @@ These two walkthrough videos shows POST, GET, PUT, and DELETE routes required th
 
 <video src="MOD18%20DELETE%20reaction%20by%20reaction%20id.mp4" controls title="Delete reaction by reaction id"></video>
 
+## Bonus
+
+<video src="mod18Bonus.mp4" controls title="Bonus"></video>
 
 
 ## Endpoints
